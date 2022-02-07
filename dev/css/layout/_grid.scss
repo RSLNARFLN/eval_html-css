@@ -1,0 +1,64 @@
+// grid
+// fast configuration in order to determine how many columns (default = 1) and gap (default = 1)
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+// column config
+.col2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.col3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.col4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.col10-90 {
+  grid-template-columns: 10% 1fr;
+}
+
+// special things
+// poser les items aux extrémités
+.start {
+  justify-self: start;
+}
+
+.end {
+  justify-self: end;
+}
+
+// grid justify center
+.gcenter {
+  justify-items: center;
+}
+
+// gap changer
+.g025 {
+  gap: 0.25rem;
+}
+
+.g05 {
+  gap: 0.5rem;
+}
+
+.g2 {
+  gap: 2rem;
+}
+
+.g3 {
+  gap: 3rem;
+}
+
+.g4 {
+  gap: 4rem;
+}
+
+.g5 {
+  gap: 5rem;
+}

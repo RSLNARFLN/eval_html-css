@@ -1,0 +1,36 @@
+// .btn (main button w/o colors)
+
+// yellow to black        (.ytb)      (white txt    ->    white txt)
+.ytb {
+  background-color: $yellow;
+  color: white;
+  transition: $transit;
+
+  &:hover {
+    background-color: black;
+  }
+}
+
+// black to yellow        (.bty)      (white txt    ->    black txt)
+.bty {
+  background-color: black;
+  color: white;
+  transition: $transit;
+
+  &:hover {
+    background-color: $yellow;
+    color: black;
+  }
+}
+
+// white to yellow        (.wty)      (black txt    ->    white txt)
+.wty {
+  background-color: $almostwhite;
+  color: black;
+  transition: $transit;
+
+  &:hover {
+    background-color: $yellow;
+    color: white;
+  }
+}

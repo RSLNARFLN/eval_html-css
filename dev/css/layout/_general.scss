@@ -1,0 +1,85 @@
+// general font
+body {
+  font-family: $font;
+  color: $textcolor;
+}
+
+// wrapper (c'est explicite ici mais on commente quand même :d)
+.wrapper {
+  width: $mainwrapper;
+  margin: 0 auto;
+}
+
+// titles size
+.big {
+  font-size: 34px;
+}
+
+.medium {
+  font-size: 24px;
+}
+
+.small {
+  font-size: 18px;
+}
+
+// special text color
+.grey {
+  color: $greytext;
+}
+
+.white {
+  color: white;
+}
+
+.yellow {
+  color: $yellow;
+}
+
+.lessyellow {
+  color: $lessyellow;
+}
+
+// fontsize
+.f-small {
+  font-size: 12px;
+}
+
+// background image sizes (maybe, not sure yet) 
+// .bg-big
+// .bg-medium
+// .bg-small
+
+// general links
+a, .gen-links {
+  text-decoration: none;
+  color: $textcolor;
+  transition: $transit;
+
+  &:hover {
+    color: $yellow;
+  }
+}
+
+// background colors
+.greybg {
+  background-color: $somebg;
+}
+
+.whitebg {
+  background-color: white;
+}
+
+.specialbg {
+  background: url('../img/price-bg.png') center/cover;
+}
+
+// center text
+.center {
+  text-align: center;
+}
+
+// pointer
+.pointer {
+  cursor: pointer;
+}

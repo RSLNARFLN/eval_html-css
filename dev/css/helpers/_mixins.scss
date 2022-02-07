@@ -1,0 +1,78 @@
+// responsive
+$mobile:764px;
+$tablet: 990px;
+$laptop: 1240px;
+$desktop: 1920px;
+
+@mixin mobile {
+    @media screen and (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (max-width: $laptop) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (max-width: $desktop) {
+        @content;
+    }
+}
+
+// ------------
+// ------------
+// ------------
+// animations
+@mixin animation($nom, $duree: .3s, $delai: 0s) {
+  animation: $nom $duree ease-in-out $delai backwards;
+} 
+
+@keyframes up {
+  from {
+      transform: translateY(10vh);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+@keyframes down {
+  from {
+      transform: translateY(-2vh);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+@keyframes zoom {
+  from {
+      transform: scale(0%);
+      opacity: 0;
+  }
+  to {
+      transform: scale(100%);
+      opacity: 1;
+  }
+}
+
+
+// ZOOM & STUFF
+@mixin zoomhover {
+  transform: scale(110%);
+}
+
+@mixin rotate {
+  transform: rotate(45deg);
+}
