@@ -1,4 +1,9 @@
 // .btn (main button w/o colors)
+.btn {
+  display: inline-block;
+  padding: 10px 1.5rem;
+}
+
 
 // yellow to black        (.ytb)      (white txt    ->    white txt)
 .ytb {
@@ -27,6 +32,7 @@
 .wty {
   background-color: $almostwhite;
   color: black;
+  border: 0.2px solid rgb(199, 199, 199);
   transition: $transit;
 
   &:hover {

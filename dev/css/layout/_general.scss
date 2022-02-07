@@ -10,7 +10,22 @@ body {
   margin: 0 auto;
 }
 
+// inner wrapper
+.iwrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.iwrapper50 {
+  width: 50%;
+  margin: 0 auto;
+}
+
 // titles size
+.verybig {
+  font-size: 56px;
+}
+
 .big {
   font-size: 34px;
 }
@@ -41,8 +56,30 @@ body {
 }
 
 // fontsize
+.f-reg {
+  font-size: 16px;
+}
+
+.f-medium {
+  font-size: 14px;
+}
+
 .f-small {
   font-size: 12px;
+}
+
+// font thin
+.fwnormal {
+  font-weight: normal;
+}
+
+.fwbold {
+  font-weight: bold;
+}
+
+// text transform uppercase
+.ttu {
+  text-transform: uppercase;
 }
 
 // background image sizes (maybe, not sure yet) 
@@ -50,10 +87,19 @@ body {
 // .bg-medium
 // .bg-small
 
-// general links
+// general links & other links
 a, .gen-links {
   text-decoration: none;
   color: $textcolor;
+  transition: $transit;
+
+  &:hover {
+    color: $yellow;
+  }
+}
+
+.link {
+  text-decoration: none;
   transition: $transit;
 
   &:hover {
@@ -82,4 +128,85 @@ a, .gen-links {
 // pointer
 .pointer {
   cursor: pointer;
+}
+
+// paddings
+.lpad-l {
+  padding-left: $topbot-little;
+}
+
+.rpad-l {
+  padding-right: $topbot-little;
+}
+
+.lpad-m {
+  padding-left: $leftright-medium;
+}
+
+.rpad-m {
+  padding-right: $leftright-medium;
+}
+
+// margins
+.topbot-l {
+  margin-top: $topbot-big;
+  margin-bottom: $topbot-big;
+}
+
+.topbot-m {
+  margin-top: $topbot-medium;
+  margin-bottom: $topbot-medium;
+}
+
+.topbot-s {
+  margin-top: $topbot-little;
+  margin-bottom: $topbot-little;
+}
+
+// center (icenter -> y for Y axis)
+.ycenter {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// top and bottom big margin
+.auto-tb {
+  margin-top: $autotb;
+  margin-bottom: $autotb;
+}
+
+.bigbot {
+  margin-bottom: $bigbot;
+}
+
+.minibot {
+  margin-bottom: $minitb;
+}
+
+// hidden element
+.hidden {
+  opacity: 0;
+  transition: $transit;
+}
+
+// Background animations
+// just scale (zoom)
+.bg-zoom {
+  transform: scale(100%);
+  transition: $transit;
+
+  &:hover {
+    transform: scale(110%);
+  }
+}
+
+// scale & rotate
+.bg-rot {
+  transform: scale(100%) rotate(0deg);
+  transition: $transit;
+
+  &:hover {
+    transform: scale(110%) rotate(5deg);
+  }
 }
