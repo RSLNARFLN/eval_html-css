@@ -28,3 +28,56 @@ header {
     }
   }
 }
+
+.hotels {
+  header {
+    height: 30vh;
+    background: url('../img/hero-bg.jpg') center/cover;
+  }
+
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+.contact {
+  header {
+    height: 30vh;
+    background: url('../img/hero-contact.jpg') center/cover;
+    position: relative;
+
+    // dark background to let things visible
+    &::before {
+      content: '';
+      background-color: rgba(0, 0, 0, 0.253);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  & * {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.blog {
+  header {
+    height: 30vh;
+    background: url('../img/hero-blog.jpg') center/cover;
+  }
+
+  h2 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+}

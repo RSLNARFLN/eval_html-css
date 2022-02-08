@@ -8,8 +8,291 @@
   <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
-<body>
-<!-- CONTENT HERE -->
-<script src="js/main.min.js"></script>
+<body class="contact">
+  <!-- CONTENT HERE -->
+  <!-- HEADER -->
+  <header>
+    <!-- pre-nav -->
+    <div class="prenav grid col2 wrapper">
+      <!-- left part -->
+      <div class="left start grid col2 g025 lpad-l">
+        <a href="#" class="gen-link white f-small">Visit Us</a>
+        <a href="#" class="gen-link white f-small">Buy Tickets</a>
+      </div>
+      <!-- right part -->
+      <div class="right end grid col4 rpad-l">
+        <a href="#" class="gen-link white"><i class="fab fa-facebook-f"></i></a>          <!-- facebook -->
+        <a href="#" class="gen-link white"><i class="fab fa-twitter"></i></a>             <!-- twitter -->
+        <a href="#" class="gen-link white"><i class="fas fa-basketball-ball"></i></a>     <!-- basketball -->
+        <a href="#" class="gen-link white"><i class="fab fa-behance"></i></a>             <!-- Behance -->
+      </div>
+    </div>
+    <!-- navbar -->
+    <nav class="wrapper grid col2 acenter">
+      <!-- left part -->
+      <div class="left start lpad-m">
+        <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+      </div>
+      <!-- right part -->
+      <div class="right end grid col3 rpad-m rm1">
+        <a href="index.html" class="gen-link white f-small hideonresp">HOME</a>
+        <a href="hotels.html" class="gen-link white f-small hideonresp">HOTELS</a>
+        <a href="contact.html" class="gen-link white f-small hideonresp">CONTACT</a>
+        <div class="burger">
+          <div class="brg-line"></div>
+          <div class="brg-line"></div>
+          <div class="brg-line"></div>
+        </div>
+      </div>
+    </nav>
+    <!-- the text -->
+    <div class="text wrapper center">
+      <!-- pre-title (little title before the big title) -->
+      
+      <!-- the main title (A.K.A. big title) -->
+      <h2 class="main-title big white">
+        Contact Us
+      </h2>
+      
+      <h3 class="pre-title white small fwnormal f-reg">
+        <a href="index.html" class="white">Home</a> → <a href="contact.html" class="white">Contact Us</a>
+      </h3>
+    </div>
+  </header>
+  
+  <!-- BURGER MENU SHOWED UP -->
+  <aside class="themenufromtheburger">
+    <!-- the menu -->
+    <div class="menu">
+      <div class="items topbot-l lpad-l">
+        <div class="right end grid lpad-m rm1">
+          <a href="index.html" class="gen-link white f-small hideonresp lpad-m">HOME</a>
+          <a href="hotels.html" class="gen-link white f-small hideonresp lpad-m">HOTELS</a>
+          <a href="contact.html" class="gen-link white f-small hideonresp lpad-m">CONTACT</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- the click disabler -->
+    <div class="disabler">
+
+    </div>
+  </aside>
+
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- MAP -->
+    <div class="map wrapper auto-tb">
+      <div class="mappy">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80598.63569383082!2d4.305377533217454!3d50.855103041034255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3a4ed73c76867%3A0xc18b3a66787302a7!2sBruxelles!5e0!3m2!1sfr!2sbe!4v1644311985606!5m2!1sfr!2sbe" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+    
+    <!-- INFO + CONTACT -->
+    <div class="infcont wrapper hwrap grid col2 rs1 rl1 astart auto-tb">
+      <!-- INFO -->
+      <div class="info grid">
+        <!-- 3 divs with double divs -->
+        <!-- onerow -->
+        <div class="onerow grid cola-1 acenter lpad-l">
+          <div class="logo house">
+            <i class="fas fa-home yellow"></i>
+          </div>
+          
+          <div class="info grid g025">
+            <span>Binghamton, New York</span>
+            <span class="grey">4343 Hinkle Deegan Lake Road</span>
+          </div>
+          
+        </div>
+        
+        <!-- onerow -->
+        <div class="onerow grid cola-1 acenter lpad-l">
+          <div class="logo phone">
+            <i class="fas fa-phone yellow"></i>
+          </div>
+          
+          <div class="info grid g025">
+            <span>00 (958) 9865 562</span>
+            <span class="grey">Mon to Fri 9am to 6 pm</span>
+          </div>
+          
+        </div>
+        
+        <!-- onerow -->
+        <div class="onerow grid cola-1 acenter lpad-l">
+          <div class="logo mail">
+            <i class="far fa-envelope yellow"></i>
+          </div>
+          
+          <div class="info grid g025">
+            <span>support@colorlib.com</span>
+            <span class="grey">Send us your query anytime!</span>
+          </div>
+          
+        </div>
+        
+      </div>
+      
+      <!-- CONTACT FORM -->
+      <div class="contactform grid col2 rs1 rl1">
+        <div class="left">
+          <input type="text" name="name" id="name" placeholder="Enter your name">
+          <input type="text" name="mail" id="mail" placeholder="Enter email address">
+          <input type="text" name="subject" id="subject" placeholder="Enter subject">
+        </div>
+
+        <div class="right">
+          <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Message"></textarea>
+        </div>
+
+      </div>
+
+    </div>
+    
+    <!-- SUBMIT BUTTON -->
+    <div class="button wrapper hwrap auto-tb tend rpad-l sendmsg">
+      <a href="#" class="btn ytb ttu">Send message</a>
+    </div>
+    
+    
+  </main>
+  
+  <!-- FOOTER -->
+  <footer>
+    <!-- different parts (4) (upperfoot) -->
+    <div class="wrapper grid col4 upperfoot f-small rm1">
+      <!-- about -->
+      <div class="about">
+        <!-- title -->
+        <div class="ttle">
+          <h2 class="small white ttu">
+            ABOUT AGENCY
+          </h2>
+        </div>
+        <!-- content -->
+        <div class="content">
+          <p class="grey">
+            The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point
+          </p>
+        </div>
+      </div>
+      
+      <!-- nav links -->
+      <div class="navlinks">
+        <!-- title -->
+        <div class="ttle">
+          <h2 class="small white ttu">
+            NAVIGATION LINKS
+          </h2>
+        </div>
+        <!-- content -->
+        <div class="content grid col2">
+          <!-- left col -->
+          <div class="left grid">
+            <a href="index.html" class="gen-link grey">Home</a>
+            <a href="#" class="gen-link grey">Feature</a>
+            <a href="#" class="gen-link grey">Services</a>
+            <a href="#" class="gen-link grey">Portfolio</a>
+          </div>
+          <!-- right col -->
+          <div class="right grid">
+            <a href="#" class="gen-link grey">Team</a>
+            <a href="#" class="gen-link grey">Pricing</a>
+            <a href="blog-single.html" class="gen-link grey">Blog</a>
+            <a href="contact.html" class="gen-link grey">Contact</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- newsletter -->
+      <div class="newsletter">
+        <!-- title -->
+        <div class="ttle">
+          <h2 class="small white ttu">
+            NEWSLETTER
+          </h2>
+        </div>
+        <!-- content -->
+        <div class="content">
+          <!-- text -->
+          <p class="grey">
+            For business professionals caught between high OEM price and mediocre print and graphic output.
+          </p>
+          <!-- email adress -->
+          <div class="mailadress">
+            <input type="text" placeholder="Email Address">
+            <a href="#" class="btn ytb"><i class="far fa-paper-plane"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- instafeed (gallery) -->
+      <div class="gallery">
+        <!-- title -->
+        <div class="ttle">
+          <h2 class="small white ttu">
+            INSTAFEED
+          </h2>
+        </div>
+        <!-- content -->
+        <div class="content grid col4">
+          <!-- 2x4 photos -->
+          <div class="onecolofpics">
+            <div class="picsquare pic1">
+              
+            </div>
+            <div class="picsquare pic2">
+              
+            </div>
+          </div>
+          
+          <div class="onecolofpics">
+            <div class="picsquare pic3">
+              
+            </div>
+            <div class="picsquare pic4">
+              
+            </div>
+          </div>
+          
+          <div class="onecolofpics">
+            <div class="picsquare pic5">
+              
+            </div>
+            <div class="picsquare pic6">
+              
+            </div>
+          </div>
+          
+          <div class="onecolofpics">
+            <div class="picsquare pic7">
+              
+            </div>
+            <div class="picsquare pic8">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- downer part of the footer -->
+    <div class="wrapper downerfoot grid col2 f-small rm1">
+      <!-- left -->
+      <div class="left">
+        Copyright ©2022 All rights reserved | This template is made with <i class="far fa-heart yellow"></i> by <a href="#" class="yellow">Colorlib</a>
+      </div>
+      <!-- right -->
+      <div class="right end grid col4">
+        <a href="#" class="gen-link"><i class="fab fa-facebook-f grey link"></i></a>          <!-- facebook -->
+        <a href="#" class="gen-link"><i class="fab fa-twitter grey link"></i></a>             <!-- twitter -->
+        <a href="#" class="gen-link"><i class="fas fa-basketball-ball grey link"></i></a>     <!-- basketball -->
+        <a href="#" class="gen-link"><i class="fab fa-behance grey link"></i></a>             <!-- Behance -->
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

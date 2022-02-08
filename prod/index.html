@@ -33,10 +33,15 @@
         <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
       </div>
       <!-- right part -->
-      <div class="right end grid col3 rpad-m">
-        <a href="index.html" class="gen-link white f-small">HOME</a>
-        <a href="hotels.html" class="gen-link white f-small">HOTELS</a>
-        <a href="contact.html" class="gen-link white f-small">CONTACT</a>
+      <div class="right end grid col3 rpad-m rm1">
+        <a href="index.html" class="gen-link white f-small hideonresp">HOME</a>
+        <a href="hotels.html" class="gen-link white f-small hideonresp">HOTELS</a>
+        <a href="contact.html" class="gen-link white f-small hideonresp">CONTACT</a>
+        <div class="burger">
+          <div class="brg-line"></div>
+          <div class="brg-line"></div>
+          <div class="brg-line"></div>
+        </div>
       </div>
     </nav>
     <!-- the text -->
@@ -58,6 +63,26 @@
     </div>
   </header>
   
+  <!-- BURGER MENU SHOWED UP -->
+  <aside class="themenufromtheburger">
+    <!-- the menu -->
+    <div class="menu">
+      <div class="items topbot-l lpad-l">
+        <div class="right end grid lpad-m rm1">
+          <a href="index.html" class="gen-link white f-small hideonresp lpad-m">HOME</a>
+          <a href="hotels.html" class="gen-link white f-small hideonresp lpad-m">HOTELS</a>
+          <a href="contact.html" class="gen-link white f-small hideonresp lpad-m">CONTACT</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- the click disabler -->
+    <div class="disabler">
+
+    </div>
+  </aside>
+
+
   <!-- MAIN -->
   <main>
     <!-- POPULAR DESTINATIONS -->
@@ -74,7 +99,7 @@
         </p>
       </div>
       <!-- 3 boxes (price shows on hover) -->
-      <div class="triple-trouble white grid col3 center">
+      <div class="triple-trouble white grid col3 center rm1">
         <!-- one box -->
         <div class="countrybox cb1">
           <!-- background img                   -->
@@ -144,7 +169,7 @@
           </p>
         </div>
         <!-- 3 boxes of prices -->
-        <div class="triple-trouble grid col3">
+        <div class="triple-trouble grid col3 rm1">
           <!-- pricebox -->
           <div class="pricebox topbot-s">
             <!-- title part -->
@@ -415,7 +440,7 @@
       </div>
       
       <!-- 4 BOXES (weird animation part) -->
-      <div class="fourboxes grid col4">
+      <div class="fourboxes grid col4 rm1">
         <!-- a box -->
         <div class="rotatebox rbox1">
           <!-- background part -->
@@ -526,7 +551,7 @@
         </div>
         
         <!-- double box -->
-        <div class="doublebox grid col2 gcenter">
+        <div class="doublebox grid col2 gcenter rm1">
           <!-- one box -->
           <div class="thebox grid col10-90">
             <!-- the portrait (left part) -->
@@ -591,7 +616,7 @@
     </div>
     
     <!-- REQUEST CUSTOM PRICE (SAME PAGE AS IN THE OTHER PAGE) -->
-    <div class="customprices grid col2 acenter">
+    <div class="customprices grid col2 acenter rm1">
       <!-- left part -->
       <div class="left iwrapper50">
         <!-- title -->
@@ -612,6 +637,7 @@
         <!-- image -->
       </div>
     </div>
+
     <!-- NEWS FROM OUR BLOG -->
     <div class="ourblog">
       <div class="wrapper">
@@ -628,9 +654,9 @@
         </div>
         
         <!-- 3 boxes with normal zoom -->
-        <div class="triple-trouble grid col3">
+        <div class="triple-trouble grid col3 rm1">
           <!-- 1 box -->
-          <div class="box grid g025">
+          <div class="box grid">
             <!-- background image -->
             <div class="overbox">
               <div class="bgimg1 blogimg bg-zoom">
@@ -645,7 +671,7 @@
             </div>
             <!-- title -->
             <h2 class="small">
-              Low Cost Advertising
+              <a href="blog-single.html">Low Cost Advertising</a>
             </h2>
             <!-- grey text -->
             <p class="grey">
@@ -658,7 +684,7 @@
           </div>
           
           <!-- 1 box -->
-          <div class="box grid g025">
+          <div class="box grid">
             <!-- background image -->
             <div class="overbox">
               <div class="bgimg2 blogimg bg-zoom">
@@ -673,7 +699,7 @@
             </div>
             <!-- title -->
             <h2 class="small">
-              Creative Outdoor Ads
+              <a href="blog-single.html">Creative Outdoor Ads</a>
             </h2>
             <!-- grey text -->
             <p class="grey">
@@ -701,7 +727,7 @@
             </div>
             <!-- title -->
             <h2 class="small">
-              It's Classified How To Utilize Free
+              <a href="blog-single.html">It's Classified How To Utilize Free</a>
             </h2>
             <!-- grey text -->
             <p class="grey">
@@ -726,7 +752,7 @@
   <!-- FOOTER -->
   <footer>
     <!-- different parts (4) (upperfoot) -->
-    <div class="wrapper grid col4 upperfoot f-small">
+    <div class="wrapper grid col4 upperfoot f-small rm1">
       <!-- about -->
       <div class="about">
         <!-- title -->
@@ -841,7 +867,7 @@
     </div>
     
     <!-- downer part of the footer -->
-    <div class="wrapper downerfoot grid col2 f-small">
+    <div class="wrapper downerfoot grid col2 f-small rm1">
       <!-- left -->
       <div class="left">
         Copyright ©2022 All rights reserved | This template is made with <i class="far fa-heart yellow"></i> by <a href="#" class="yellow">Colorlib</a>

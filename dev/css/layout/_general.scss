@@ -2,12 +2,28 @@
 body {
   font-family: $font;
   color: $textcolor;
+  overflow-x: hidden;
 }
 
 // wrapper (c'est explicite ici mais on commente quand même :d)
 .wrapper {
   width: $mainwrapper;
   margin: 0 auto;
+
+  @include laptop {
+    width: 98%;
+    margin: 0 auto;
+  }
+}
+
+.hwrap {
+  @include laptop {
+    width: 550px;
+  }
+
+  @include mobile {
+    width: 98%;
+  }
 }
 
 // inner wrapper
@@ -19,6 +35,10 @@ body {
 .iwrapper50 {
   width: 50%;
   margin: 0 auto;
+
+  @include laptop {
+    width: 90%;
+  }
 }
 
 // titles size
@@ -125,6 +145,10 @@ a, .gen-links {
   text-align: center;
 }
 
+.tend {
+  text-align: right;
+}
+
 // pointer
 .pointer {
   cursor: pointer;
@@ -208,5 +232,45 @@ a, .gen-links {
 
   &:hover {
     transform: scale(110%) rotate(5deg);
+  }
+}
+
+// Custom price section
+.customprices {
+  position: relative;
+  
+  h2 {
+    margin: 2px 0;
+  }
+  
+  p {
+    margin-bottom: 50px;
+  }
+}
+
+.rightbg {
+  background: url('../img/about-img.jpg') center/cover;
+  height: 50vh;
+}
+
+// forms
+input {
+  border: rgb(165, 165, 165) solid 1px;
+  height: 50px;
+  margin-bottom: 12px;
+
+  &::placeholder {
+    padding-left: 5px;
+    font-size: 14px;
+  }
+}
+
+textarea {
+  border: rgb(165, 165, 165) solid 1px;
+
+  &::placeholder {
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 14px;
   }
 }

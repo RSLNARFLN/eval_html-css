@@ -23,6 +23,18 @@
   grid-template-columns: 10% 1fr;
 }
 
+.col8-2 {
+  grid-template-columns: 80% 1fr;
+}
+
+.col3-7 {
+  grid-template-columns: 30% 1fr;
+}
+
+.cola-1 {
+  grid-template-columns: auto 1fr;
+}
+
 // special things
 // poser les items aux extrémités
 .start {
@@ -42,7 +54,19 @@
   align-items: center;
 }
 
+.astart {
+  align-items: start;
+}
+
+.aend {
+  align-items: end;
+}
+
 // gap changer
+.g0 {
+  gap: 0;
+}
+
 .g025 {
   gap: 0.25rem;
 }
@@ -65,4 +89,38 @@
 
 .g5 {
   gap: 5rem;
+}
+
+// responsive
+
+// intermediate
+@include laptop {
+  // 1 col responsive
+  .rl1 {
+    grid-template-columns: 1fr;
+  }
+
+  .rl2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rl3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+// mobile
+@include mobile {
+  // 1 col responsive
+  .rm1 {
+    grid-template-columns: 1fr;
+  }
+
+  .rm2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rm3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

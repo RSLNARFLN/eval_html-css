@@ -1,0 +1,35 @@
+.hotels {
+  background-color: $somebg;
+
+  .card {
+    background-color: white;
+  }
+
+  .bgimg {
+    height: 200px;
+  }
+
+  .bgimg1 {
+    background: url('../img/hotels/d1.jpg') center/cover;
+  }
+
+  .bgimg2 {
+    background: url('../img/hotels/d2.jpg') center/cover;
+  }
+
+  .bgimg3 {
+    background: url('../img/hotels/d3.jpg') center/cover;
+  }
+
+  .bgimg4 {
+    background: url('../img/hotels/d4.jpg') center/cover;
+  }
+
+  .bgimg5 {
+    background: url('../img/hotels/d5.jpg') center/cover;
+  }
+
+  .bgimg6 {
+    background: url('../img/hotels/d5.jpg') center/cover;
+  }
+}

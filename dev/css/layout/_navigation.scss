@@ -1,4 +1,76 @@
 nav {
   background-color: rgba(255, 255, 255, 0.219);
   height: 50px;
+
+  .hideonresp {
+    transition: $transit;
+
+    // hide on responsive
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.burger {
+  display: none;
+  width: 30px;
+  height: 30px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .brg-line {
+    border-top: 2px white solid;
+    // margin-top: 2px;
+    height: 5px;
+    width: 25px;
+    transform: translateY(100%);
+    transition: .2s all ease-in-out;
+  }
+
+  // display on responsive
+  @include mobile {
+    position: relative;
+    display: block;
+  }
+}
+
+aside {
+  .menu {
+    width: 30%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.904);
+    left: -100%;
+    top: 0;
+    z-index: -2;
+    position: fixed;
+    transition: $transit;
+
+    &.active {
+      left: 0;
+      top: 0;
+      z-index: 4;
+    }
+  }
+
+  .disabler {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.548);
+    left: 0;
+    top: 0;
+    z-index: -1;
+    position: fixed;
+    transition: $transit;
+
+    &.active {
+      display: block;
+      left: 0;
+      top: 0;
+      z-index: 3;
+    }
+  }
 }

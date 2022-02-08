@@ -40,3 +40,15 @@
     color: white;
   }
 }
+
+// yellow to yellow       (.yty)    (black txt    ->      black txt)
+.yty {
+  background-color: $yellow;
+  color: black;
+  transition: $transit;
+
+  &:hover {
+    background-color: $yellow;
+    color: black;
+  }
+}
