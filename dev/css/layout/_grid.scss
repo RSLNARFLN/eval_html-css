@@ -23,6 +23,14 @@
   grid-template-columns: 10% 1fr;
 }
 
+.col9-1 {
+  grid-template-columns: 1fr 10%;
+}
+
+.col2-8 {
+  grid-template-columns: 20% 1fr;
+}
+
 .col8-2 {
   grid-template-columns: 80% 1fr;
 }
@@ -33,6 +41,15 @@
 
 .cola-1 {
   grid-template-columns: auto 1fr;
+}
+
+.col131 {
+  grid-template-columns: 10% 1fr 20%;
+}
+
+// autofill
+.autofill {
+  grid-template-columns: repeat(auto-fit, minmax(1px, 76px));
 }
 
 // special things
@@ -48,6 +65,10 @@
 // grid justify center
 .gcenter {
   justify-items: center;
+}
+
+.gstart {
+  justify-items: start;
 }
 
 .acenter {

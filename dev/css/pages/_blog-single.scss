@@ -1,4 +1,6 @@
 .blog {
+  background-color: $somebg;
+
   // a card
   .card {
     background-color: $yellow;
@@ -31,4 +33,186 @@
   .adimg {
     background: url('../img/blog/ads-banner.jpg') center/cover;
   }
+
+  .enteremail {
+    height: 100%;
+    width: 100%;
+  }
+
+  .searchinput {
+    width: 100%;
+    border-radius: 50px;
+    height: 30px;
+    background-color: $yellow;
+    border: 1px solid white;
+
+    &::placeholder {
+      color: white;
+    }
+
+    
+  }
+}
+
+.rmenu {
+  background-color: white;
+  border: rgba(128, 128, 128, 0.329) 1px solid;
+  height: 1800px;
+}
+
+// utility to make space
+.blogtopbot {
+  margin: 20px auto;
+}
+
+.btblittle {
+  margin: 10px auto;
+}
+// end of utility
+
+.onecat {
+  margin: 10px 5px;
+}
+
+.photocharlie {
+  height: 80px;
+  width: 80px;
+  background: url('../img/blog/user-info.png') center/cover;
+}
+
+.botline {
+  border-bottom: 1px rgba(128, 128, 128, 0.267) solid;
+}
+
+.imgblogpost {
+  background: url('../img/blog/feature-img1.jpg') center/cover;
+  height: 400px;
+}
+
+.h2withoutmargin {
+  margin-top: 0px;
+}
+
+// white box with text
+.whiteboxtext {
+  background: white;
+  padding: 20px;
+}
+
+.twoimages {
+  height: 300px;
+
+  .twoimg1 {
+    background: url('../img/blog/post-img1.jpg') center/cover;
+  }
+
+  .twoimg2 {
+    background: url('../img/blog/post-img2.jpg') center/cover;
+  }
+}
+
+.sometext {
+  padding-bottom: 50px;
+}
+
+.photonextprev {
+  height: 40px;
+  width: 40px;
+}
+
+.pnp1 {
+  background: url('../img/blog/prev.jpg') center/cover;
+}
+
+.pnp2 {
+  background: url('../img/blog/next.jpg') center/cover;
+}
+
+// number of comments padding
+.nbofcoms {
+  padding: 20px 0;
+}
+
+// photos of commentators
+.photoofthecomment {
+  height: 60px;
+  width: 60px;
+}
+
+.p1 {
+  background: url('../img/blog/c1.jpg') center/cover;
+}
+
+.p2 {
+  background: url('../img/blog/c2.jpg') center/cover;
+}
+
+.p3 {
+  background: url('../img/blog/c3.jpg') center/cover;
+}
+
+.p4 {
+  background: url('../img/blog/c4.jpg') center/cover;
+}
+
+.p5 {
+  background: url('../img/blog/c5.jpg') center/cover;
+}
+
+// reply padding
+.reply {
+  padding-left: 50px;
+}
+
+// comment section
+.comments {
+  border: 1px rgba(128, 128, 128, 0.198) solid;
+  // background-color: white;
+}
+
+.hundredprocentinput {
+  width: 100%;
+  border: none;
+}
+
+// leave a com
+.leaveacom {
+  border: 1px rgba(128, 128, 128, 0.198) solid;
+
+  .leaveacomtitle {
+    padding-top: 20px;
+  }
+
+  .buttoncenter {
+    padding-bottom: 20px;
+  }
+}
+
+// little icons
+.authorofthearticle::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: '\f007';
+  color: black;
+}
+
+.dateofthearticle::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: '\f133';
+  color: black;
+}
+
+.viewsnbr::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: '\f06e';
+  color: black;
+}
+
+.nbofcomments::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: '\f075';
+  color: black;
 }
